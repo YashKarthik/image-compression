@@ -2,7 +2,7 @@ from PIL import Image
 
 def compress(file, quality=50):
     picture = Image.open(file)
-    picture.save("compressed_"+file,
+    picture.save(file,
                  optimize=True,
                  quality=quality)
     return
